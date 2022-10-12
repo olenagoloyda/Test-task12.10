@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Test task</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sign_in_section">
+        <div class="sign_label">
+          <span>Create an account</span>
+        </div>
+        <form action="" class="sign_in_form">
+          <input
+            required
+            type="email"
+            name="email"
+            placeholder="Email (requauired)"
+            id="user_email"
+          />
+          <input
+            required
+            type="password"
+            name="password"
+            placeholder="Password (requauired)"
+            id="user_pass"
+          />
+          <button type="submit" class="submit_button">Submit</button>
+        </form>
+      </div>
+      <div class="modal">
+        <p class="modal_text">
+          Hello user with email: <span id="email">{user_email}</span>
+        </p>
+        <button class="cancel_btn modal_btn">Cancel</button>
+        <button class="confirm_btn modal_btn">Confirm</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
